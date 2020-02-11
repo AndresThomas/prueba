@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tablas3.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ScrollPane layoutX="14.0" layoutY="120.0" prefHeight="230.0" prefWidth="530.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="miTabla" layoutX="-7.0" layoutY="-2.0" prefHeight="230.0" prefWidth="537.0">
+                    <columns>
+                      <TableColumn fx:id="idAlumno" prefWidth="90.0" text="idAlumno" />
+                      <TableColumn fx:id="nombreAlumno" prefWidth="108.0" text="Nombre Alumno" />
+                        <TableColumn fx:id="ciudad" prefWidth="97.0" text="Ciudad" />
+                        <TableColumn fx:id="estado" minWidth="0.0" prefWidth="113.0" text="Estado" />
+                        <TableColumn fx:id="nombreUsuario" minWidth="0.0" prefWidth="126.0" text="Nombre Usuario" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button id="verDatos" layoutX="228.0" layoutY="387.0" mnemonicParsing="false" onAction="#verDatos" text="Ver datos">
+         <font>
+            <Font name="Copperplate Gothic Light" size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

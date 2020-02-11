@@ -1,4 +1,4 @@
-package basedatos;
+package tablas3;
 
 /**
  *
